@@ -12,7 +12,7 @@ Install the following:
 ```
 [Credentials]
 aws_access_key_id = <aws_key_id>
-aws_secret_access_key = <aws_secr>
+aws_secret_access_key = <aws_secret>
 ```
 - Create an AWS key_pair
 
