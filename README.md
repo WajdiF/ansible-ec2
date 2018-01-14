@@ -10,14 +10,9 @@ Install the following:
 # Requirements
   - Create a .boto in $HOME
 ```
-#!python
-
-    [Credentials]
-
-    aws_access_key_id = <aws_key_id>
-
-    aws_secret_access_key = <aws_secr>
-
+[Credentials]
+aws_access_key_id = <aws_key_id>
+aws_secret_access_key = <aws_secr>
 ```
 - Create an AWS key_pair
 
