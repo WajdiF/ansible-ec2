@@ -1,0 +1,6 @@
+#change those parameters according to the AWS configuration
+aws_region: "$region"
+#Instance user
+aws_user: "admin"
+aws_keypair: "$AWS_key_pair"
+aws_vpc_subnet_id: "$subnet_id"

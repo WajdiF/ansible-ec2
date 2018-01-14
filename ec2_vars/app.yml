@@ -1,0 +1,11 @@
+# This file is to describe the instance type you're about to provision, you can create as many instance description as you want.
+#TODO change all $vars according to your AWS configuration
+aws_instance_type: "$instance_type"
+aws_security_group: "$security_group"
+aws_vpc_subnet_id: "$subnet_id"
+# image debian
+aws_image: "ami-221ea342"
+# instance will be tagged with: Name=... AND Type=... AND Environement=...
+ec2_tag_Name: "$machine_name"
+ec2_tag_Type: "$machine_type"
+ec2_tag_Environment: "$machine_environment"

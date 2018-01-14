@@ -1,0 +1,7 @@
+.boto
+*.retry
+*.swp
+mup.js
+settings.json
+pubcaisse
+*.pyc

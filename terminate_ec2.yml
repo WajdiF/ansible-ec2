@@ -1,0 +1,17 @@
+---
+
+- hosts: all
+  remote_user: admin
+
+  pre_tasks:
+    - include_vars: ec2_vars/aws_info.yml
+  tasks:
+     - action: ec2_facts
+
+     - name: terminating instance
+       local_action:
+         module: ec2
+         state: 'absent'
+         region: "{{aws_region}}"
+         instance_ids: "{{ ansible_ec2_instance_id }}"
+       delegate_to: localhost
